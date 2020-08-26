@@ -1,0 +1,12 @@
+<h3>New Artist Form Page</h3>
+
+<%= form_for @artist do |f| %>
+    <p><label>Band Name: </label><br>
+    <%= f.text_field :name %><br></p>
+
+    <p><label>Bio: </label><br>
+    <%= f.text_field :bio, :size=>"75" %><br></p>
+
+    <%= f.submit %>
+
+<% end %>
