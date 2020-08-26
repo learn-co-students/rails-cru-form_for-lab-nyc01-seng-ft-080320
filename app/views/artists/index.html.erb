@@ -1,0 +1,8 @@
+<h3>Artist Index Page</h3>
+
+<% @artists.each do |artist| %>
+    <div><%=link_to(artist.name, artist_path(artist))  %></div>
+<% end %>
+
+<h3>Add Artist:</h3>
+<div><%=link_to("Click here!", new_artist_path)  %></div>
